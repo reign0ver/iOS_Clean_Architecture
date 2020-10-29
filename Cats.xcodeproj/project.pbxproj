@@ -3,18 +3,58 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0955844DCE6886DABE2147A5 /* Pods_CatsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D0C1DB9F9C3DECE0339072 /* Pods_CatsTests.framework */; };
+		217A80620D6E92CF8CCB0D6B /* Pods_Cats_CatsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B2315738098677F73B219E /* Pods_Cats_CatsUITests.framework */; };
+		C53A93D89E5BF81EDE360BDF /* Pods_Cats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D3E77E28245DEBDAD95C57 /* Pods_Cats.framework */; };
+		FB133B802549A87900173596 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB133B7F2549A87900173596 /* Coordinator.swift */; };
+		FB133B882549AA0300173596 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB133B872549AA0300173596 /* MainCoordinator.swift */; };
+		FB133B8D2549B88400173596 /* LikesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB133B8C2549B88400173596 /* LikesCoordinator.swift */; };
+		FB133B922549F30700173596 /* BreedDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB133B912549F30700173596 /* BreedDetailsCoordinator.swift */; };
+		FB37681D25486A8B004D58EB /* GetListOfBreedsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37681C25486A8B004D58EB /* GetListOfBreedsUseCase.swift */; };
+		FB37682825487DD1004D58EB /* StaticItalicTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37682625487DD0004D58EB /* StaticItalicTextCell.swift */; };
+		FB37682925487DD1004D58EB /* BreedsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37682725487DD1004D58EB /* BreedsCell.swift */; };
+		FB37682E25487E13004D58EB /* BreedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37682D25487E13004D58EB /* BreedsViewModel.swift */; };
+		FB37683425487FEC004D58EB /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37683325487FEC004D58EB /* UIViewController + Extensions.swift */; };
+		FB37683A254880D3004D58EB /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB376839254880D3004D58EB /* CustomTabBarController.swift */; };
+		FB37684025488571004D58EB /* DIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37683F25488571004D58EB /* DIManager.swift */; };
+		FB37684F254885E2004D58EB /* LikesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37684E254885E2004D58EB /* LikesViewModel.swift */; };
+		FB37685425488610004D58EB /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37685325488610004D58EB /* LikesViewController.swift */; };
+		FB37685A25488651004D58EB /* WikipediaWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37685825488650004D58EB /* WikipediaWebViewController.swift */; };
+		FB37685B25488651004D58EB /* BreedDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37685925488651004D58EB /* BreedDetailsViewController.swift */; };
+		FB37686225488730004D58EB /* BreedInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37686025488730004D58EB /* BreedInformationCell.swift */; };
+		FB37686325488730004D58EB /* ImageBreedStaticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37686125488730004D58EB /* ImageBreedStaticCell.swift */; };
+		FB37686B25488799004D58EB /* BreedDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37686A25488799004D58EB /* BreedDetailsViewModel.swift */; };
+		FB376870254887D2004D58EB /* GetBreedImageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37686F254887D2004D58EB /* GetBreedImageUseCase.swift */; };
+		FB376875254887E6004D58EB /* GetRandomCatImageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB376874254887E6004D58EB /* GetRandomCatImageUseCase.swift */; };
+		FB37687A254889C2004D58EB /* SaveVoteLocalUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB376879254889C2004D58EB /* SaveVoteLocalUseCase.swift */; };
 		FB3CDF862540756200645A16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3CDF852540756200645A16 /* AppDelegate.swift */; };
 		FB3CDF882540756200645A16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3CDF872540756200645A16 /* SceneDelegate.swift */; };
-		FB3CDF8A2540756200645A16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3CDF892540756200645A16 /* ViewController.swift */; };
-		FB3CDF8D2540756200645A16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3CDF8B2540756200645A16 /* Main.storyboard */; };
+		FB3CDF8A2540756200645A16 /* ListOfBreedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3CDF892540756200645A16 /* ListOfBreedsViewController.swift */; };
 		FB3CDF8F2540756200645A16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3CDF8E2540756200645A16 /* Assets.xcassets */; };
 		FB3CDF922540756200645A16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3CDF902540756200645A16 /* LaunchScreen.storyboard */; };
 		FB3CDF9D2540756300645A16 /* CatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3CDF9C2540756300645A16 /* CatsTests.swift */; };
 		FB3CDFA82540756300645A16 /* CatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3CDFA72540756300645A16 /* CatsUITests.swift */; };
+		FB574016254759E20019D892 /* BreedsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB574015254759E20019D892 /* BreedsRepository.swift */; };
+		FB57401B25475A060019D892 /* CatImagesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB57401A25475A060019D892 /* CatImagesRepository.swift */; };
+		FB5740342547A8D90019D892 /* BreedsRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5740332547A8D90019D892 /* BreedsRemoteDataSource.swift */; };
+		FB57403C2547A9B10019D892 /* CatImagesRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB57403B2547A9B10019D892 /* CatImagesRemoteDataSource.swift */; };
+		FB5740412547AA1E0019D892 /* CatImagesLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5740402547AA1E0019D892 /* CatImagesLocalDataSource.swift */; };
+		FB5740462547ABB40019D892 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5740452547ABB40019D892 /* Breed.swift */; };
+		FB57404B2547ABD70019D892 /* ImageBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB57404A2547ABD70019D892 /* ImageBreed.swift */; };
+		FB5740522547ADA60019D892 /* VoteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5740512547ADA60019D892 /* VoteEntity.swift */; };
+		FB57405A2547D13B0019D892 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5740592547D13B0019D892 /* NetworkError.swift */; };
+		FB5740642547DE5F0019D892 /* TypeOfVote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5740632547DE5F0019D892 /* TypeOfVote.swift */; };
+		FB5740742547E10A0019D892 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5740732547E10A0019D892 /* Vote.swift */; };
+		FB5740792547E2340019D892 /* BaseLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5740782547E2340019D892 /* BaseLocalDataSource.swift */; };
+		FB5740952547E66B0019D892 /* RealmCatImagesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5740942547E66B0019D892 /* RealmCatImagesDataSource.swift */; };
+		FB57409C2547E8110019D892 /* BaseRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB57409B2547E8110019D892 /* BaseRemoteDataSource.swift */; };
+		FB5740A42547E8680019D892 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5740A32547E8680019D892 /* NetworkConstants.swift */; };
+		FB5740B72547EA250019D892 /* BreedsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5740B62547EA250019D892 /* BreedsService.swift */; };
+		FB5740BC2547EA330019D892 /* CatImagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5740BB2547EA330019D892 /* CatImagesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +75,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		381EDF713E304F6E99DC284F /* Pods-Cats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cats.debug.xcconfig"; path = "Target Support Files/Pods-Cats/Pods-Cats.debug.xcconfig"; sourceTree = "<group>"; };
+		544E7681E7ECCD8F3522DE9E /* Pods-CatsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsTests.release.xcconfig"; path = "Target Support Files/Pods-CatsTests/Pods-CatsTests.release.xcconfig"; sourceTree = "<group>"; };
+		56B2315738098677F73B219E /* Pods_Cats_CatsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cats_CatsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BFEF0AE15D65B1E0CA59D0C /* Pods-Cats-CatsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cats-CatsUITests.release.xcconfig"; path = "Target Support Files/Pods-Cats-CatsUITests/Pods-Cats-CatsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7FE677DDEB1612C758E2755A /* Pods-Cats-CatsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cats-CatsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Cats-CatsUITests/Pods-Cats-CatsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2D3E77E28245DEBDAD95C57 /* Pods_Cats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1EAAA6184556F10E271AA4 /* Pods-CatsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsTests.debug.xcconfig"; path = "Target Support Files/Pods-CatsTests/Pods-CatsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4D0C1DB9F9C3DECE0339072 /* Pods_CatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3DF0B88B3294FC1349B989A /* Pods-Cats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cats.release.xcconfig"; path = "Target Support Files/Pods-Cats/Pods-Cats.release.xcconfig"; sourceTree = "<group>"; };
+		FB133B7F2549A87900173596 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FB133B872549AA0300173596 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		FB133B8C2549B88400173596 /* LikesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesCoordinator.swift; sourceTree = "<group>"; };
+		FB133B912549F30700173596 /* BreedDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailsCoordinator.swift; sourceTree = "<group>"; };
+		FB37681C25486A8B004D58EB /* GetListOfBreedsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListOfBreedsUseCase.swift; sourceTree = "<group>"; };
+		FB37682625487DD0004D58EB /* StaticItalicTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticItalicTextCell.swift; sourceTree = "<group>"; };
+		FB37682725487DD1004D58EB /* BreedsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedsCell.swift; sourceTree = "<group>"; };
+		FB37682D25487E13004D58EB /* BreedsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedsViewModel.swift; sourceTree = "<group>"; };
+		FB37683325487FEC004D58EB /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
+		FB376839254880D3004D58EB /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		FB37683F25488571004D58EB /* DIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIManager.swift; sourceTree = "<group>"; };
+		FB37684E254885E2004D58EB /* LikesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikesViewModel.swift; sourceTree = "<group>"; };
+		FB37685325488610004D58EB /* LikesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
+		FB37685825488650004D58EB /* WikipediaWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikipediaWebViewController.swift; sourceTree = "<group>"; };
+		FB37685925488651004D58EB /* BreedDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedDetailsViewController.swift; sourceTree = "<group>"; };
+		FB37686025488730004D58EB /* BreedInformationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedInformationCell.swift; sourceTree = "<group>"; };
+		FB37686125488730004D58EB /* ImageBreedStaticCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBreedStaticCell.swift; sourceTree = "<group>"; };
+		FB37686A25488799004D58EB /* BreedDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedDetailsViewModel.swift; sourceTree = "<group>"; };
+		FB37686F254887D2004D58EB /* GetBreedImageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBreedImageUseCase.swift; sourceTree = "<group>"; };
+		FB376874254887E6004D58EB /* GetRandomCatImageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRandomCatImageUseCase.swift; sourceTree = "<group>"; };
+		FB376879254889C2004D58EB /* SaveVoteLocalUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveVoteLocalUseCase.swift; sourceTree = "<group>"; };
 		FB3CDF822540756200645A16 /* Cats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3CDF852540756200645A16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB3CDF872540756200645A16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB3CDF892540756200645A16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FB3CDF8C2540756200645A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB3CDF892540756200645A16 /* ListOfBreedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfBreedsViewController.swift; sourceTree = "<group>"; };
 		FB3CDF8E2540756200645A16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB3CDF912540756200645A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB3CDF932540756200645A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +118,23 @@
 		FB3CDFA32540756300645A16 /* CatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3CDFA72540756300645A16 /* CatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsUITests.swift; sourceTree = "<group>"; };
 		FB3CDFA92540756300645A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB574015254759E20019D892 /* BreedsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsRepository.swift; sourceTree = "<group>"; };
+		FB57401A25475A060019D892 /* CatImagesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImagesRepository.swift; sourceTree = "<group>"; };
+		FB5740332547A8D90019D892 /* BreedsRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsRemoteDataSource.swift; sourceTree = "<group>"; };
+		FB57403B2547A9B10019D892 /* CatImagesRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImagesRemoteDataSource.swift; sourceTree = "<group>"; };
+		FB5740402547AA1E0019D892 /* CatImagesLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImagesLocalDataSource.swift; sourceTree = "<group>"; };
+		FB5740452547ABB40019D892 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		FB57404A2547ABD70019D892 /* ImageBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBreed.swift; sourceTree = "<group>"; };
+		FB5740512547ADA60019D892 /* VoteEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteEntity.swift; sourceTree = "<group>"; };
+		FB5740592547D13B0019D892 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		FB5740632547DE5F0019D892 /* TypeOfVote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfVote.swift; sourceTree = "<group>"; };
+		FB5740732547E10A0019D892 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
+		FB5740782547E2340019D892 /* BaseLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocalDataSource.swift; sourceTree = "<group>"; };
+		FB5740942547E66B0019D892 /* RealmCatImagesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCatImagesDataSource.swift; sourceTree = "<group>"; };
+		FB57409B2547E8110019D892 /* BaseRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRemoteDataSource.swift; sourceTree = "<group>"; };
+		FB5740A32547E8680019D892 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		FB5740B62547EA250019D892 /* BreedsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsService.swift; sourceTree = "<group>"; };
+		FB5740BB2547EA330019D892 /* CatImagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImagesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C53A93D89E5BF81EDE360BDF /* Pods_Cats.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0955844DCE6886DABE2147A5 /* Pods_CatsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +158,124 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				217A80620D6E92CF8CCB0D6B /* Pods_Cats_CatsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CD5C0EB6DD425B7BFDD1CA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				381EDF713E304F6E99DC284F /* Pods-Cats.debug.xcconfig */,
+				F3DF0B88B3294FC1349B989A /* Pods-Cats.release.xcconfig */,
+				7FE677DDEB1612C758E2755A /* Pods-Cats-CatsUITests.debug.xcconfig */,
+				7BFEF0AE15D65B1E0CA59D0C /* Pods-Cats-CatsUITests.release.xcconfig */,
+				CB1EAAA6184556F10E271AA4 /* Pods-CatsTests.debug.xcconfig */,
+				544E7681E7ECCD8F3522DE9E /* Pods-CatsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B1A16150C6366BDE65FCDCA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2D3E77E28245DEBDAD95C57 /* Pods_Cats.framework */,
+				56B2315738098677F73B219E /* Pods_Cats_CatsUITests.framework */,
+				D4D0C1DB9F9C3DECE0339072 /* Pods_CatsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB133B7D2549A86600173596 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FB133B7E2549A86C00173596 /* Protocol */,
+				FB133B872549AA0300173596 /* MainCoordinator.swift */,
+				FB133B8C2549B88400173596 /* LikesCoordinator.swift */,
+				FB133B912549F30700173596 /* BreedDetailsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FB133B7E2549A86C00173596 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				FB133B7F2549A87900173596 /* Coordinator.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		FB37682425487D90004D58EB /* ListOfBreeds */ = {
+			isa = PBXGroup;
+			children = (
+				FB37682525487DAC004D58EB /* Cell */,
+				FB3CDF892540756200645A16 /* ListOfBreedsViewController.swift */,
+			);
+			path = ListOfBreeds;
+			sourceTree = "<group>";
+		};
+		FB37682525487DAC004D58EB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FB37682725487DD1004D58EB /* BreedsCell.swift */,
+				FB37682625487DD0004D58EB /* StaticItalicTextCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FB37683225487F71004D58EB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FB37683325487FEC004D58EB /* UIViewController + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FB376838254880C1004D58EB /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FB376839254880D3004D58EB /* CustomTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		FB37683E2548851F004D58EB /* DI Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FB37683F25488571004D58EB /* DIManager.swift */,
+			);
+			path = "DI Manager";
+			sourceTree = "<group>";
+		};
+		FB37684C254885C4004D58EB /* BreedDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FB37685F25488716004D58EB /* Cell */,
+				FB37685925488651004D58EB /* BreedDetailsViewController.swift */,
+				FB37685825488650004D58EB /* WikipediaWebViewController.swift */,
+			);
+			path = BreedDetails;
+			sourceTree = "<group>";
+		};
+		FB37684D254885D3004D58EB /* Likes */ = {
+			isa = PBXGroup;
+			children = (
+				FB37685325488610004D58EB /* LikesViewController.swift */,
+			);
+			path = Likes;
+			sourceTree = "<group>";
+		};
+		FB37685F25488716004D58EB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FB37686125488730004D58EB /* ImageBreedStaticCell.swift */,
+				FB37686025488730004D58EB /* BreedInformationCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		FB3CDF792540756200645A16 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +283,8 @@
 				FB3CDF9B2540756300645A16 /* CatsTests */,
 				FB3CDFA62540756300645A16 /* CatsUITests */,
 				FB3CDF832540756200645A16 /* Products */,
+				6CD5C0EB6DD425B7BFDD1CA6 /* Pods */,
+				B1A16150C6366BDE65FCDCA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +301,13 @@
 		FB3CDF842540756200645A16 /* Cats */ = {
 			isa = PBXGroup;
 			children = (
+				FBE56459254229E300425F11 /* Presentation */,
+				FBFF156B25432825003206CE /* Framework */,
+				FBE56458254229DA00425F11 /* Domain */,
+				FBE5645A254229EA00425F11 /* Data */,
+				FBFF156C2543282F003206CE /* UseCases */,
 				FB3CDF852540756200645A16 /* AppDelegate.swift */,
 				FB3CDF872540756200645A16 /* SceneDelegate.swift */,
-				FB3CDF892540756200645A16 /* ViewController.swift */,
-				FB3CDF8B2540756200645A16 /* Main.storyboard */,
 				FB3CDF8E2540756200645A16 /* Assets.xcassets */,
 				FB3CDF902540756200645A16 /* LaunchScreen.storyboard */,
 				FB3CDF932540756200645A16 /* Info.plist */,
@@ -128,6 +333,160 @@
 			path = CatsUITests;
 			sourceTree = "<group>";
 		};
+		FB57401F2547A6C50019D892 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				FB5740332547A8D90019D892 /* BreedsRemoteDataSource.swift */,
+				FB57403B2547A9B10019D892 /* CatImagesRemoteDataSource.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		FB57404F2547AD7D0019D892 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				FB5740452547ABB40019D892 /* Breed.swift */,
+				FB57404A2547ABD70019D892 /* ImageBreed.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		FB5740502547AD890019D892 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				FB5740512547ADA60019D892 /* VoteEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		FB57405E2547DDE80019D892 /* LocalDB */ = {
+			isa = PBXGroup;
+			children = (
+				FB5740992547E7AF0019D892 /* Base */,
+				FB5740502547AD890019D892 /* Entities */,
+				FB5740942547E66B0019D892 /* RealmCatImagesDataSource.swift */,
+			);
+			path = LocalDB;
+			sourceTree = "<group>";
+		};
+		FB57405F2547DDF00019D892 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				FB57409A2547E8000019D892 /* Base */,
+				FB5740B62547EA250019D892 /* BreedsService.swift */,
+				FB5740BB2547EA330019D892 /* CatImagesService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		FB5740992547E7AF0019D892 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FB5740782547E2340019D892 /* BaseLocalDataSource.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FB57409A2547E8000019D892 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FB57409B2547E8110019D892 /* BaseRemoteDataSource.swift */,
+				FB5740592547D13B0019D892 /* NetworkError.swift */,
+				FB5740A32547E8680019D892 /* NetworkConstants.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FBE56458254229DA00425F11 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FB57404F2547AD7D0019D892 /* DTO */,
+				FB5740632547DE5F0019D892 /* TypeOfVote.swift */,
+				FB5740732547E10A0019D892 /* Vote.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FBE56459254229E300425F11 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FB133B7D2549A86600173596 /* Coordinator */,
+				FBE5646425422B3F00425F11 /* View */,
+				FBE5646325422B3800425F11 /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FBE5645A254229EA00425F11 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FBE5646125422AF300425F11 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FBE5645F25422ADB00425F11 /* LocalDB */ = {
+			isa = PBXGroup;
+			children = (
+				FB5740402547AA1E0019D892 /* CatImagesLocalDataSource.swift */,
+			);
+			path = LocalDB;
+			sourceTree = "<group>";
+		};
+		FBE5646125422AF300425F11 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FB57401F2547A6C50019D892 /* APIService */,
+				FBE5645F25422ADB00425F11 /* LocalDB */,
+				FB574015254759E20019D892 /* BreedsRepository.swift */,
+				FB57401A25475A060019D892 /* CatImagesRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		FBE5646325422B3800425F11 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FB37682D25487E13004D58EB /* BreedsViewModel.swift */,
+				FB37686A25488799004D58EB /* BreedDetailsViewModel.swift */,
+				FB37684E254885E2004D58EB /* LikesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FBE5646425422B3F00425F11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB37682425487D90004D58EB /* ListOfBreeds */,
+				FB37684C254885C4004D58EB /* BreedDetails */,
+				FB37684D254885D3004D58EB /* Likes */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FBFF156B25432825003206CE /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				FB37683E2548851F004D58EB /* DI Manager */,
+				FB376838254880C1004D58EB /* TabBar */,
+				FB37683225487F71004D58EB /* Extensions */,
+				FB57405F2547DDF00019D892 /* APIService */,
+				FB57405E2547DDE80019D892 /* LocalDB */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		FBFF156C2543282F003206CE /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				FB37681C25486A8B004D58EB /* GetListOfBreedsUseCase.swift */,
+				FB37686F254887D2004D58EB /* GetBreedImageUseCase.swift */,
+				FB376874254887E6004D58EB /* GetRandomCatImageUseCase.swift */,
+				FB376879254889C2004D58EB /* SaveVoteLocalUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +494,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB3CDFAC2540756300645A16 /* Build configuration list for PBXNativeTarget "Cats" */;
 			buildPhases = (
+				5AC982B62E282B517E460D22 /* [CP] Check Pods Manifest.lock */,
 				FB3CDF7E2540756200645A16 /* Sources */,
 				FB3CDF7F2540756200645A16 /* Frameworks */,
 				FB3CDF802540756200645A16 /* Resources */,
+				C76A06D9DDC76D5EF6C54C63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +513,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB3CDFAF2540756300645A16 /* Build configuration list for PBXNativeTarget "CatsTests" */;
 			buildPhases = (
+				CB8B6080411D25F995A21AFC /* [CP] Check Pods Manifest.lock */,
 				FB3CDF942540756300645A16 /* Sources */,
 				FB3CDF952540756300645A16 /* Frameworks */,
 				FB3CDF962540756300645A16 /* Resources */,
@@ -170,9 +532,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB3CDFB22540756300645A16 /* Build configuration list for PBXNativeTarget "CatsUITests" */;
 			buildPhases = (
+				1116F607B6E8688CE7F80502 /* [CP] Check Pods Manifest.lock */,
 				FB3CDF9F2540756300645A16 /* Sources */,
 				FB3CDFA02540756300645A16 /* Frameworks */,
 				FB3CDFA12540756300645A16 /* Resources */,
+				6562A788C8C7EE95CFC7D204 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +597,6 @@
 			files = (
 				FB3CDF922540756200645A16 /* LaunchScreen.storyboard in Resources */,
 				FB3CDF8F2540756200645A16 /* Assets.xcassets in Resources */,
-				FB3CDF8D2540756200645A16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +616,155 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1116F607B6E8688CE7F80502 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cats-CatsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AC982B62E282B517E460D22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cats-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6562A788C8C7EE95CFC7D204 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cats-CatsUITests/Pods-Cats-CatsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cats-CatsUITests/Pods-Cats-CatsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cats-CatsUITests/Pods-Cats-CatsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C76A06D9DDC76D5EF6C54C63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cats/Pods-Cats-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cats/Pods-Cats-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cats/Pods-Cats-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB8B6080411D25F995A21AFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FB3CDF7E2540756200645A16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB3CDF8A2540756200645A16 /* ViewController.swift in Sources */,
+				FB37683425487FEC004D58EB /* UIViewController + Extensions.swift in Sources */,
+				FB37682825487DD1004D58EB /* StaticItalicTextCell.swift in Sources */,
+				FB5740A42547E8680019D892 /* NetworkConstants.swift in Sources */,
+				FB5740462547ABB40019D892 /* Breed.swift in Sources */,
+				FB37684025488571004D58EB /* DIManager.swift in Sources */,
+				FB133B8D2549B88400173596 /* LikesCoordinator.swift in Sources */,
+				FB37686325488730004D58EB /* ImageBreedStaticCell.swift in Sources */,
+				FB133B802549A87900173596 /* Coordinator.swift in Sources */,
+				FB57409C2547E8110019D892 /* BaseRemoteDataSource.swift in Sources */,
+				FB5740412547AA1E0019D892 /* CatImagesLocalDataSource.swift in Sources */,
+				FB5740792547E2340019D892 /* BaseLocalDataSource.swift in Sources */,
+				FB133B882549AA0300173596 /* MainCoordinator.swift in Sources */,
+				FB5740B72547EA250019D892 /* BreedsService.swift in Sources */,
+				FB376875254887E6004D58EB /* GetRandomCatImageUseCase.swift in Sources */,
+				FB5740952547E66B0019D892 /* RealmCatImagesDataSource.swift in Sources */,
+				FB37687A254889C2004D58EB /* SaveVoteLocalUseCase.swift in Sources */,
+				FB3CDF8A2540756200645A16 /* ListOfBreedsViewController.swift in Sources */,
+				FB37684F254885E2004D58EB /* LikesViewModel.swift in Sources */,
+				FB37683A254880D3004D58EB /* CustomTabBarController.swift in Sources */,
+				FB37682925487DD1004D58EB /* BreedsCell.swift in Sources */,
+				FB376870254887D2004D58EB /* GetBreedImageUseCase.swift in Sources */,
+				FB37685B25488651004D58EB /* BreedDetailsViewController.swift in Sources */,
+				FB5740742547E10A0019D892 /* Vote.swift in Sources */,
 				FB3CDF862540756200645A16 /* AppDelegate.swift in Sources */,
+				FB37686B25488799004D58EB /* BreedDetailsViewModel.swift in Sources */,
+				FB37685A25488651004D58EB /* WikipediaWebViewController.swift in Sources */,
+				FB57404B2547ABD70019D892 /* ImageBreed.swift in Sources */,
+				FB5740342547A8D90019D892 /* BreedsRemoteDataSource.swift in Sources */,
+				FB37681D25486A8B004D58EB /* GetListOfBreedsUseCase.swift in Sources */,
+				FB37685425488610004D58EB /* LikesViewController.swift in Sources */,
+				FB574016254759E20019D892 /* BreedsRepository.swift in Sources */,
+				FB57403C2547A9B10019D892 /* CatImagesRemoteDataSource.swift in Sources */,
+				FB133B922549F30700173596 /* BreedDetailsCoordinator.swift in Sources */,
+				FB37682E25487E13004D58EB /* BreedsViewModel.swift in Sources */,
 				FB3CDF882540756200645A16 /* SceneDelegate.swift in Sources */,
+				FB57405A2547D13B0019D892 /* NetworkError.swift in Sources */,
+				FB5740BC2547EA330019D892 /* CatImagesService.swift in Sources */,
+				FB5740642547DE5F0019D892 /* TypeOfVote.swift in Sources */,
+				FB37686225488730004D58EB /* BreedInformationCell.swift in Sources */,
+				FB57401B25475A060019D892 /* CatImagesRepository.swift in Sources */,
+				FB5740522547ADA60019D892 /* VoteEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +800,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FB3CDF8B2540756200645A16 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB3CDF8C2540756200645A16 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FB3CDF902540756200645A16 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,10 +929,12 @@
 		};
 		FB3CDFAD2540756300645A16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 381EDF713E304F6E99DC284F /* Pods-Cats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R3NRRRC6P;
 				INFOPLIST_FILE = Cats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,10 +949,12 @@
 		};
 		FB3CDFAE2540756300645A16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3DF0B88B3294FC1349B989A /* Pods-Cats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R3NRRRC6P;
 				INFOPLIST_FILE = Cats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,6 +969,7 @@
 		};
 		FB3CDFB02540756300645A16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB1EAAA6184556F10E271AA4 /* Pods-CatsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +991,7 @@
 		};
 		FB3CDFB12540756300645A16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 544E7681E7ECCD8F3522DE9E /* Pods-CatsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +1013,7 @@
 		};
 		FB3CDFB32540756300645A16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FE677DDEB1612C758E2755A /* Pods-Cats-CatsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +1033,7 @@
 		};
 		FB3CDFB42540756300645A16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BFEF0AE15D65B1E0CA59D0C /* Pods-Cats-CatsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
