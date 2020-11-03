@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CatImagesService: BaseRemoteDataSource, CatImagesRemoteDataSource {
+final class CatImagesService: BaseRemoteDataSource, CatImagesRemoteDataSource {
     
     func getBreedImage(_ breedId: String, completion: @escaping (Result<[ImageBreed], NetworkError>) -> Void) {
         let endpoint = NetworkConstants.fetchImageByBreed + breedId

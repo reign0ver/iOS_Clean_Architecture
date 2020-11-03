@@ -7,7 +7,7 @@
 
 import Foundation
 
-class BreedsService: BaseRemoteDataSource, BreedsRemoteDataSource {
+final class BreedsService: BaseRemoteDataSource, BreedsRemoteDataSource {
     
     func getListOfBreeds(completion: @escaping (Result<[Breed], NetworkError>) -> Void) {
         let endpoint = NetworkConstants.fetchListOfBreeds

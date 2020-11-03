@@ -191,20 +191,12 @@
 		FB133B7D2549A86600173596 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				FB133B7E2549A86C00173596 /* Protocol */,
+				FB133B7F2549A87900173596 /* Coordinator.swift */,
 				FB133B872549AA0300173596 /* MainCoordinator.swift */,
 				FB133B8C2549B88400173596 /* LikesCoordinator.swift */,
 				FB133B912549F30700173596 /* BreedDetailsCoordinator.swift */,
 			);
 			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		FB133B7E2549A86C00173596 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				FB133B7F2549A87900173596 /* Coordinator.swift */,
-			);
-			path = Protocol;
 			sourceTree = "<group>";
 		};
 		FB37682425487D90004D58EB /* ListOfBreeds */ = {
@@ -413,6 +405,7 @@
 				FB133B7D2549A86600173596 /* Coordinator */,
 				FBE5646425422B3F00425F11 /* View */,
 				FBE5646325422B3800425F11 /* ViewModel */,
+				FB376838254880C1004D58EB /* TabBar */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -468,7 +461,6 @@
 			isa = PBXGroup;
 			children = (
 				FB37683E2548851F004D58EB /* DI Manager */,
-				FB376838254880C1004D58EB /* TabBar */,
 				FB37683225487F71004D58EB /* Extensions */,
 				FB57405F2547DDF00019D892 /* APIService */,
 				FB57405E2547DDE80019D892 /* LocalDB */,

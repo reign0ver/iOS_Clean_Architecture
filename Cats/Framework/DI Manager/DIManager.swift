@@ -8,7 +8,7 @@
 import Foundation
 import Swinject
 
-class DIManager {
+final class DIManager {
     
     private let container: Container
     

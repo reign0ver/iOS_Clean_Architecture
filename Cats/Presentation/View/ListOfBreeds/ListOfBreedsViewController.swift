@@ -9,6 +9,7 @@ import UIKit
 
 class ListOfBreedsViewController: UITableViewController {
     
+    weak var coordinator: MainCoordinator?
     private let viewModel: BreedsViewModel
     
     init(viewModel: BreedsViewModel) {
@@ -92,9 +93,7 @@ extension ListOfBreedsViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let currentBreed = viewModel.breeds[indexPath.row]
-        let vc = BreedDetailsViewController(currentBreed, (AppDelegate.shared?.diManager.getContainer().resolve(BreedDetailsViewModel.self))!)
-        vc.modalPresentationStyle = .fullScreen
-        navigationController?.pushViewController(vc, animated: true)
+        coordinator?.showBreedDetails(breed: currentBreed)
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
