@@ -22,7 +22,14 @@ class BreedDetailsCoordinator: Coordinator {
     
     func start() {
         let vc = BreedDetailsViewController(breed, AppDelegate.shared.diManager.getContainer().resolve(BreedDetailsViewModel.self)!)
+        vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func didFinishWatchingDetails() {
+        print("----------------")
+        print("Going backwards")
+        print("----------------")
     }
     
 }

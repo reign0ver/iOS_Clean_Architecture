@@ -9,6 +9,8 @@ import UIKit
 
 class BreedDetailsViewController: UITableViewController {
     
+    weak var coordinator: BreedDetailsCoordinator?
+    
     private let breed: Breed
     private let viewModel: BreedDetailsViewModel
     
@@ -22,10 +24,7 @@ class BreedDetailsViewController: UITableViewController {
         super.viewDidLoad()
         viewModel.delegate = self
         viewModel.getBreedImageURL(breed.id)
-        tableView.register(ImageBreedStaticCell.self, forCellReuseIdentifier: ImageBreedStaticCell.reuseIdentifier)
-        tableView.register(BreedInformationCell.self, forCellReuseIdentifier: BreedInformationCell.reuseIdentifier)
-        tableView.allowsSelection = false
-        tableView.isUserInteractionEnabled = true
+        setupTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,10 +32,22 @@ class BreedDetailsViewController: UITableViewController {
         setupNavigationBar()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        coordinator?.didFinishWatchingDetails()
+    }
+    
     private func setupNavigationBar() {
         self.navigationItem.title = breed.name
         self.navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .always
+    }
+    
+    private func setupTableView() {
+        tableView.register(ImageBreedStaticCell.self, forCellReuseIdentifier: ImageBreedStaticCell.reuseIdentifier)
+        tableView.register(BreedInformationCell.self, forCellReuseIdentifier: BreedInformationCell.reuseIdentifier)
+        tableView.allowsSelection = false
+        tableView.isUserInteractionEnabled = true
     }
     
     required init?(coder: NSCoder) {
