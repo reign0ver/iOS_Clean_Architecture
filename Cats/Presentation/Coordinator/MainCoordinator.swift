@@ -49,5 +49,22 @@ extension MainCoordinator: UINavigationControllerDelegate {
         if navigationController.viewControllers.contains(fromViewController) {
             return
         }
+        
+        // We’re still here – it means we’re popping the view controller, so we can check whether it’s a buy view controller
+        if let buyViewController = fromViewController as? BreedDetailsViewController {
+            // We're popping a buy view controller; end its coordinator
+            childDidFinish(buyViewController.coordinator)
+        }
+    }
+}
+
+extension MainCoordinator {
+    func childDidFinish(_ child: Coordinator?) {
+        for (index, coordinator) in childCoordinators.enumerated() {
+            if coordinator === child {
+                childCoordinators.remove(at: index)
+                break
+            }
+        }
     }
 }

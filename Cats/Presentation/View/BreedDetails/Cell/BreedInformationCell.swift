@@ -8,7 +8,7 @@
 import UIKit
 
 protocol GoToWebViewDelegate: class {
-    func presentWebView(vc: WikipediaWebViewController)
+    func presentWebView(url: String)
 }
 
 class BreedInformationCell: UITableViewCell {
@@ -88,10 +88,7 @@ class BreedInformationCell: UITableViewCell {
     
     @objc
     private func goToWikipedia() {
-        print("MALDI - TASEA")
-        let vc = WikipediaWebViewController(webViewURL: wikipediaURL)
-        vc.modalPresentationStyle = .fullScreen
-        delegate?.presentWebView(vc: vc)
+        delegate?.presentWebView(url: wikipediaURL)
     }
     
     

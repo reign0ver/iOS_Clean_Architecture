@@ -14,13 +14,11 @@ protocol LikesViewModelDelegate: class {
 class LikesViewModel {
     
     var image: ImageBreed?
+    let navigationTitle = "Voting"
     weak var delegate: LikesViewModelDelegate?
     
     private let getRandomImageUseCase: GetRandomCatImageUseCase
     private let saveLocalVoteUseCase: SaveVoteLocalUseCase
-    
-    let navigationTitle = "Votes"
-    
     
     //MARK: Init
     init(_ getRandomImageUseCase: GetRandomCatImageUseCase, _ saveLocalVoteUseCase: SaveVoteLocalUseCase) {

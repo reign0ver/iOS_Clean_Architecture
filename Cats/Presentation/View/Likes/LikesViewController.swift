@@ -74,13 +74,13 @@ class LikesViewController: UIViewController {
     private func setupButtonsStackView() {
         view.addSubview(buttonsStackView)
         buttonsStackView.translatesAutoresizingMaskIntoConstraints = false
-        buttonsStackView.addArrangedSubview(likeButton)
         buttonsStackView.addArrangedSubview(dislikeButton)
+        buttonsStackView.addArrangedSubview(likeButton)
         let constraints = [
             buttonsStackView.topAnchor.constraint(equalTo: catImageView.bottomAnchor, constant: 32),
             buttonsStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             buttonsStackView.heightAnchor.constraint(equalToConstant: 50),
-            buttonsStackView.widthAnchor.constraint(equalToConstant: 150)
+            buttonsStackView.widthAnchor.constraint(equalToConstant: 130)
         ]
         NSLayoutConstraint.activate(constraints)
     }
@@ -88,7 +88,7 @@ class LikesViewController: UIViewController {
     private func configureView() {
         let url = URL(string: viewModel.image!.url)
         let scale = UIScreen.main.scale
-        let processor = ResizingImageProcessor(referenceSize: CGSize(width: 200, height: 200)) |> RoundCornerImageProcessor(cornerRadius: 100)
+        let processor = ResizingImageProcessor(referenceSize: CGSize(width: 300, height: 300)) |> RoundCornerImageProcessor(cornerRadius: 20)
         catImageView.kf.indicatorType = .activity
         catImageView.kf.setImage(
             with: url,
@@ -108,7 +108,7 @@ class LikesViewController: UIViewController {
     
     private let likeButton: UIButton = {
         let button = UIButton()
-        let buttonImage = UIImage(named: "like")
+        let buttonImage = UIImage(named: "full_heart")
         button.setImage(buttonImage, for: .normal)
         return button
     }()

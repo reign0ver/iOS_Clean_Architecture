@@ -20,10 +20,17 @@ class CustomTabBarController: UITabBarController {
         ]
     }
     
-    private var controllerNames: [String] {
+    private var controllerIcons: [UIImage] {
         return [
-            "Breeds",
-            "Likes"
+            UIImage(named: "cat")!,
+            UIImage(named: "voting")!
+        ]
+    }
+    
+    private var controllerIconsPressed: [UIImage] {
+        return [
+            UIImage(named: "cat_pressed")!,
+            UIImage(named: "voting_pressed")!
         ]
     }
 
@@ -41,7 +48,8 @@ class CustomTabBarController: UITabBarController {
     
     private func setTabBarTitles() {
         for index in 0...controllers.count - 1 {
-            controllers[index].tabBarItem.title = controllerNames[index]
+            controllers[index].tabBarItem.image = controllerIcons[index].withRenderingMode(.alwaysOriginal)
+            controllers[index].tabBarItem.selectedImage = controllerIconsPressed[index].withRenderingMode(.alwaysOriginal)
         }
     }
 

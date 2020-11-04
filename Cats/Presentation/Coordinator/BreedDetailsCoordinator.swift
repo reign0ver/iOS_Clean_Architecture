@@ -26,10 +26,8 @@ class BreedDetailsCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: true)
     }
     
-    func didFinishWatchingDetails() {
-        print("----------------")
-        print("Going backwards")
-        print("----------------")
+    func showWikipediaWebView(url: String) {
+        let vc = WikipediaWebViewController(webViewURL: url)
+        navigationController.pushViewController(vc, animated: true)
     }
-    
 }

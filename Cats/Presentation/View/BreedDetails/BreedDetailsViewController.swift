@@ -32,11 +32,6 @@ class BreedDetailsViewController: UITableViewController {
         setupNavigationBar()
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        coordinator?.didFinishWatchingDetails()
-    }
-    
     private func setupNavigationBar() {
         self.navigationItem.title = breed.name
         self.navigationController?.navigationBar.prefersLargeTitles = true
@@ -59,7 +54,6 @@ class BreedDetailsViewController: UITableViewController {
 //MARK: - TableView Delegate and DataSource
 
 extension BreedDetailsViewController {
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
@@ -83,13 +77,11 @@ extension BreedDetailsViewController {
         default:
             break
         }
-        
         return UITableViewCell()
     }
 }
 
 //MARK:- ViewModel Delegate
-
 extension BreedDetailsViewController: ImageViewModelDelegate {
     func updateImageURL() {
         DispatchQueue.main.async {
@@ -100,11 +92,9 @@ extension BreedDetailsViewController: ImageViewModelDelegate {
     }
 }
 
-//MARK: - Delegate for the WikipediaButton inside the cell
-
 extension BreedDetailsViewController: GoToWebViewDelegate {
-    func presentWebView(vc: WikipediaWebViewController) {
-        navigationController?.pushViewController(vc, animated: true)
+    func presentWebView(url: String) {
+        coordinator?.showWikipediaWebView(url: url)
     }
     
 }

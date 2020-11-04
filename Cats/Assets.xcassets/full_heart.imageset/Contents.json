@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "pulgar-arriba.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "full_heart.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
