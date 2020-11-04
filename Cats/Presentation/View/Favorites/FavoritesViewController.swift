@@ -9,15 +9,16 @@ import UIKit
 
 class FavoritesViewController: UITableViewController {
     
-    private let viewModel: VotingViewModel
+    private let viewModel: FavoritesViewModel
     
-    init(_ viewModel: VotingViewModel) {
+    init(_ viewModel: FavoritesViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.getAllVotes()
     }
     
     required init?(coder: NSCoder) {
@@ -34,7 +35,7 @@ extension FavoritesViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return viewModel.votes.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

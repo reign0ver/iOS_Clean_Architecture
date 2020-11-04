@@ -57,6 +57,8 @@
 		FB5740BC2547EA330019D892 /* CatImagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5740BB2547EA330019D892 /* CatImagesService.swift */; };
 		FB90055825524B7E00C6E361 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90055725524B7E00C6E361 /* FavoritesViewController.swift */; };
 		FB90055E25524C2F00C6E361 /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90055D25524C2F00C6E361 /* FavoritesCell.swift */; };
+		FB9005662552683C00C6E361 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9005652552683C00C6E361 /* FavoritesViewModel.swift */; };
+		FB90056B2552687600C6E361 /* GetVotesFromLocalDataSourceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90056A2552687600C6E361 /* GetVotesFromLocalDataSourceUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +141,8 @@
 		FB5740BB2547EA330019D892 /* CatImagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImagesService.swift; sourceTree = "<group>"; };
 		FB90055725524B7E00C6E361 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		FB90055D25524C2F00C6E361 /* FavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
+		FB9005652552683C00C6E361 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		FB90056A2552687600C6E361 /* GetVotesFromLocalDataSourceUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVotesFromLocalDataSourceUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -455,6 +459,7 @@
 				FB37682D25487E13004D58EB /* BreedsViewModel.swift */,
 				FB37686A25488799004D58EB /* BreedDetailsViewModel.swift */,
 				FB37684E254885E2004D58EB /* VotingViewModel.swift */,
+				FB9005652552683C00C6E361 /* FavoritesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -497,6 +502,7 @@
 				FB37686F254887D2004D58EB /* GetBreedImageUseCase.swift */,
 				FB376874254887E6004D58EB /* GetRandomCatImageUseCase.swift */,
 				FB376879254889C2004D58EB /* SaveVoteLocalUseCase.swift */,
+				FB90056A2552687600C6E361 /* GetVotesFromLocalDataSourceUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -755,6 +761,7 @@
 				FB376875254887E6004D58EB /* GetRandomCatImageUseCase.swift in Sources */,
 				FB5740952547E66B0019D892 /* RealmCatImagesDataSource.swift in Sources */,
 				FB37687A254889C2004D58EB /* SaveVoteLocalUseCase.swift in Sources */,
+				FB90056B2552687600C6E361 /* GetVotesFromLocalDataSourceUseCase.swift in Sources */,
 				FB90055825524B7E00C6E361 /* FavoritesViewController.swift in Sources */,
 				FB3CDF8A2540756200645A16 /* ListOfBreedsViewController.swift in Sources */,
 				FB37684F254885E2004D58EB /* VotingViewModel.swift in Sources */,
@@ -772,6 +779,7 @@
 				FB37685425488610004D58EB /* VotingViewController.swift in Sources */,
 				FB574016254759E20019D892 /* BreedsRepository.swift in Sources */,
 				FB57403C2547A9B10019D892 /* CatImagesRemoteDataSource.swift in Sources */,
+				FB9005662552683C00C6E361 /* FavoritesViewModel.swift in Sources */,
 				FB133B922549F30700173596 /* BreedDetailsCoordinator.swift in Sources */,
 				FB37682E25487E13004D58EB /* BreedsViewModel.swift in Sources */,
 				FB3CDF882540756200645A16 /* SceneDelegate.swift in Sources */,

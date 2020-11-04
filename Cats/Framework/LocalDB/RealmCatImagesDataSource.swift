@@ -15,7 +15,7 @@ class RealmCatImagesDataSource: CatImagesLocalDataSource {
     //TODO: Error handling, return a bool or throw the error til presentation layer(?)
     func save(vote: Vote) -> Bool {
         do {
-            try persistanceInstance.insert(mapIntoVoteEntity(vote))
+            try persistanceInstance.insert(mapToVoteEntity(vote))
             return true
         } catch {
             print(error)
@@ -23,7 +23,7 @@ class RealmCatImagesDataSource: CatImagesLocalDataSource {
         }
     }
     
-    func getVotes() -> [Vote] {
+    func getAllVotes() -> [Vote] {
         let votes = persistanceInstance.findAll()
         return mapRealmResultToAnArray(votes)
     }
@@ -39,12 +39,12 @@ class RealmCatImagesDataSource: CatImagesLocalDataSource {
         }
     }
     
-    private func mapIntoVoteEntity(_ vote: Vote) -> VoteEntity {
-        let voteEntity = VoteEntity()
-        voteEntity.name = vote.name
-        voteEntity.imageURL = vote.imageURL
-        voteEntity.vote = vote.vote
-        return voteEntity
+    private func mapToVoteEntity(_ vote: Vote) -> VoteEntity {
+        return VoteEntity(
+            name: vote.name,
+            imageURL: vote.imageURL,
+            vote: vote.vote
+        )
     }
     
 }

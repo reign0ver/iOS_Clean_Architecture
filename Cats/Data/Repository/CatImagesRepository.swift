@@ -29,4 +29,8 @@ class CatImagesRepository {
         return localDataSource.save(vote: vote)
     }
     
+    func getAllVotes() -> [Vote] {
+        return localDataSource.getAllVotes()
+    }
+    
 }
