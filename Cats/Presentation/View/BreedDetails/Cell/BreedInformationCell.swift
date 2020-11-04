@@ -117,7 +117,7 @@ class BreedInformationCell: UITableViewCell {
     
     private lazy var wikipediaURLButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Tap here Wikipedia", for: .normal)
+        button.setTitle("Tap here to Wikipedia", for: .normal)
         button.isUserInteractionEnabled = true
         button.isEnabled = true
         

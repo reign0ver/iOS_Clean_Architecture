@@ -9,7 +9,6 @@ import UIKit
 
 class FavoritesCoordinator: Coordinator {
     
-    var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
     
     init(navController: UINavigationController) {

@@ -9,7 +9,6 @@ import UIKit
 
 class VotingCoordinator: Coordinator {
     
-    var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
     
     init(navController: UINavigationController) {

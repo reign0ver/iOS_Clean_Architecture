@@ -9,9 +9,7 @@ import UIKit
 
 class BreedDetailsCoordinator: Coordinator {
     
-    var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
-    weak var parentCoordinator: MainCoordinator?
     
     private let breed: Breed
     

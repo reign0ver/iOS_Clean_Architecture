@@ -9,7 +9,6 @@ import Foundation
 
 class GetListOfBreedsUseCase {
     
-    //TODO - Desacoplar
     private let repository: BreedsRepository
     
     init(_ repository: BreedsRepository) {

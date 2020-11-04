@@ -9,7 +9,7 @@ import UIKit
 
 class ListOfBreedsViewController: UITableViewController {
     
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: BreedsCoordinator?
     private let viewModel: BreedsViewModel
     
     init(viewModel: BreedsViewModel) {
