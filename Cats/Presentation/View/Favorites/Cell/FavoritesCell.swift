@@ -25,11 +25,12 @@ class FavoritesCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    //MARK: Setting up the view
+    //MARK: Configuring the cell
     
     func configure(vote: Vote) {
-        nameLabel.text = vote.name
         setVoteImage(vote)
+        nameLabel.text = vote.name
+        dateLabel.text = formattingDate(vote.date ?? Date())
         catImage.setImageFromURL(vote.imageURL, estimatedWidth: 50, estimatedHeight: 50, cornerRadius: 20)
     }
     
@@ -41,6 +42,14 @@ class FavoritesCell: UITableViewCell {
             voteImage.image = UIImage(named: "dislike")
         }
     }
+    
+    private func formattingDate(_ date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM d, h:mm a"
+        return dateFormatter.string(from: date)
+    }
+    
+    //MARK: Setting up the view and constraints
     
     private func setupCatImage() {
         addSubview(catImage)
@@ -62,7 +71,7 @@ class FavoritesCell: UITableViewCell {
         let constraints = [
             nameLabel.topAnchor.constraint(greaterThanOrEqualTo: self.topAnchor, constant: 16),
             nameLabel.leadingAnchor.constraint(equalTo: catImage.trailingAnchor, constant: 16),
-            nameLabel.heightAnchor.constraint(equalToConstant: 20)
+            nameLabel.heightAnchor.constraint(equalToConstant: 18)
         ]
         NSLayoutConstraint.activate(constraints)
     }
@@ -74,7 +83,7 @@ class FavoritesCell: UITableViewCell {
             dateLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 8),
             dateLabel.bottomAnchor.constraint(lessThanOrEqualTo: self.bottomAnchor, constant: -16),
             dateLabel.leadingAnchor.constraint(equalTo: catImage.trailingAnchor, constant: 16),
-            dateLabel.heightAnchor.constraint(equalToConstant: 18)
+            dateLabel.heightAnchor.constraint(equalToConstant: 15)
         ]
         NSLayoutConstraint.activate(constraints)
     }
@@ -102,13 +111,13 @@ class FavoritesCell: UITableViewCell {
     
     private let nameLabel: UILabel = {
         let label = UILabel()
+        label.font = .systemFont(ofSize: 16)
         return label
     }()
     
     private let dateLabel: UILabel = {
         let label = UILabel()
         label.font = .italicSystemFont(ofSize: 12)
-        label.text = "8 Oct 2020, 20:58"
         return label
     }()
     
