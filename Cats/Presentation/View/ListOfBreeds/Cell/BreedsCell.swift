@@ -9,6 +9,8 @@ import UIKit
 
 class BreedsCell: UITableViewCell {
     
+    //MARK: Init
+    
     static let reuseIdentifier = String(describing: BreedsCell.self)
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -21,18 +23,11 @@ class BreedsCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private let nameLabel: UILabel = {
-        let label = UILabel()
-        
-        return label
-    }()
+    //MARK: Setting up the cell
     
-    private let arrowIcon: UIImageView = {
-        let image = UIImage(named: "goes_in")
-        let imageView = UIImageView(image: image)
-        
-        return imageView
-    }()
+    func configure(_ breed: Breed) {
+        nameLabel.text = breed.name
+    }
     
     private func setupBreedName() {
         addSubview(nameLabel)
@@ -59,7 +54,18 @@ class BreedsCell: UITableViewCell {
         NSLayoutConstraint.activate(constraints)
     }
     
-    func configure(_ breed: Breed) {
-        nameLabel.text = breed.name
-    }
+    //MARK: Views
+    
+    private let nameLabel: UILabel = {
+        let label = UILabel()
+        
+        return label
+    }()
+    
+    private let arrowIcon: UIImageView = {
+        let image = UIImage(named: "goes_in")
+        let imageView = UIImageView(image: image)
+        
+        return imageView
+    }()
 }

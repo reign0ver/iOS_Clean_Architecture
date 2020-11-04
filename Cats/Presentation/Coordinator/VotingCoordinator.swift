@@ -7,10 +7,9 @@
 
 import UIKit
 
-class LikesCoordinator: Coordinator {
+class VotingCoordinator: Coordinator {
     
     var childCoordinators: [Coordinator] = []
-    
     var navigationController: UINavigationController
     
     init(navController: UINavigationController) {
@@ -18,7 +17,7 @@ class LikesCoordinator: Coordinator {
     }
     
     func start() {
-        let vc = LikesViewController(viewModel: AppDelegate.shared.diManager.getContainer().resolve(LikesViewModel.self)!)
+        let vc = VotingViewController(viewModel: AppDelegate.shared.diManager.getContainer().resolve(VotingViewModel.self)!)
         navigationController.pushViewController(vc, animated: true)
     }
     

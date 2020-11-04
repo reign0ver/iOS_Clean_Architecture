@@ -11,26 +11,29 @@ import UIKit
 class CustomTabBarController: UITabBarController {
     
     private let mainCoordinator = MainCoordinator(navController: UINavigationController())
-    private let likesCoordinador = LikesCoordinator(navController: UINavigationController())
+    private let votingCoordinator = VotingCoordinator(navController: UINavigationController())
     
     private var controllers: [UIViewController] {
         return [
             mainCoordinator.navigationController,
-            likesCoordinador.navigationController
+            votingCoordinator.navigationController,
+            UIViewController()
         ]
     }
     
     private var controllerIcons: [UIImage] {
         return [
             UIImage(named: "cat")!,
-            UIImage(named: "voting")!
+            UIImage(named: "voting")!,
+            UIImage(named: "favorite")!
         ]
     }
     
     private var controllerIconsPressed: [UIImage] {
         return [
             UIImage(named: "cat_pressed")!,
-            UIImage(named: "voting_pressed")!
+            UIImage(named: "voting_pressed")!,
+            UIImage(named: "favorite_pressed")!
         ]
     }
 
@@ -43,7 +46,7 @@ class CustomTabBarController: UITabBarController {
     
     private func startCoordinators() {
         mainCoordinator.start()
-        likesCoordinador.start()
+        votingCoordinator.start()
     }
     
     private func setTabBarTitles() {

@@ -76,8 +76,8 @@ final class DIManager {
         container.register(BreedDetailsViewModel.self) { r in
             BreedDetailsViewModel(r.resolve(GetBreedImageUseCase.self)!)
         }
-        container.register(LikesViewModel.self) { r in
-            LikesViewModel(r.resolve(GetRandomCatImageUseCase.self)!, r.resolve(SaveVoteLocalUseCase.self)!)
+        container.register(VotingViewModel.self) { r in
+            VotingViewModel(r.resolve(GetRandomCatImageUseCase.self)!, r.resolve(SaveVoteLocalUseCase.self)!)
         }
         
         //Views

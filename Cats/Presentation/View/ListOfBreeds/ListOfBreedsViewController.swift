@@ -19,10 +19,9 @@ class ListOfBreedsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(BreedsCell.self, forCellReuseIdentifier: BreedsCell.reuseIdentifier)
-        tableView.register(StaticItalicTextCell.self, forCellReuseIdentifier: StaticItalicTextCell.reuseIdentifier)
-        getListOfBreeds()
         viewModel.delegate = self
+        getListOfBreeds()
+        setupTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +33,11 @@ class ListOfBreedsViewController: UITableViewController {
         self.navigationItem.title = viewModel.navigationTitle
         self.navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .always
+    }
+    
+    private func setupTableView() {
+        tableView.register(BreedsCell.self, forCellReuseIdentifier: BreedsCell.reuseIdentifier)
+        tableView.register(StaticItalicTextCell.self, forCellReuseIdentifier: StaticItalicTextCell.reuseIdentifier)
     }
     
     private func getListOfBreeds() {
@@ -48,7 +52,6 @@ class ListOfBreedsViewController: UITableViewController {
 }
 
 //MARK: - TableView Delegate and DataSource
-
 extension ListOfBreedsViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {

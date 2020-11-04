@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import RealmSwift
 
 class RealmCatImagesDataSource: CatImagesLocalDataSource {
     
@@ -19,6 +20,22 @@ class RealmCatImagesDataSource: CatImagesLocalDataSource {
         } catch {
             print(error)
             return false
+        }
+    }
+    
+    func getVotes() -> [Vote] {
+        let votes = persistanceInstance.findAll()
+        return mapRealmResultToAnArray(votes)
+    }
+    
+    private func mapRealmResultToAnArray(_ result: Results<VoteEntity>) -> [Vote] {
+        return result.map { voteEntity -> Vote in
+            return Vote(
+                name: voteEntity.name,
+                date: voteEntity.date,
+                imageURL: voteEntity.imageURL,
+                vote: voteEntity.vote
+            )
         }
     }
     

@@ -1,5 +1,5 @@
 //
-//  LikesViewModel.swift
+//  VotingViewModel.swift
 //  Cats
 //
 //  Created by Andres Carrillo on 27/10/20.
@@ -7,15 +7,15 @@
 
 import Foundation
 
-protocol LikesViewModelDelegate: class {
+protocol VotingViewModelDelegate: class {
     func updateView()
 }
 
-class LikesViewModel {
+class VotingViewModel {
     
     var image: ImageBreed?
     let navigationTitle = "Voting"
-    weak var delegate: LikesViewModelDelegate?
+    weak var delegate: VotingViewModelDelegate?
     
     private let getRandomImageUseCase: GetRandomCatImageUseCase
     private let saveLocalVoteUseCase: SaveVoteLocalUseCase
@@ -35,7 +35,7 @@ class LikesViewModel {
                 strongSelf.delegate?.updateView()
                 break
             case .failure(let error):
-                print("Error at LikesViewModel -> ", error)
+                print("Error at VotingViewModel -> ", error)
             }
         }
     }

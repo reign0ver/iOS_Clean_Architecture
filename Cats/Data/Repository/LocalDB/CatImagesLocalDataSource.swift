@@ -8,6 +8,6 @@
 import Foundation
 
 protocol CatImagesLocalDataSource {
-    
     func save(vote: Vote) -> Bool
+    func getVotes() -> [Vote]
 }

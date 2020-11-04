@@ -1,5 +1,5 @@
 //
-//  LikesViewController.swift
+//  VotingViewController.swift
 //  Cats
 //
 //  Created by Andres Carrillo on 27/10/20.
@@ -8,11 +8,11 @@
 import UIKit
 import Kingfisher
 
-class LikesViewController: UIViewController {
+class VotingViewController: UIViewController {
 
-    private let viewModel: LikesViewModel
+    private let viewModel: VotingViewModel
     
-    init(viewModel: LikesViewModel) {
+    init(viewModel: VotingViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -88,7 +88,7 @@ class LikesViewController: UIViewController {
     private func configureView() {
         let url = URL(string: viewModel.image!.url)
         let scale = UIScreen.main.scale
-        let processor = ResizingImageProcessor(referenceSize: CGSize(width: 300, height: 300)) |> RoundCornerImageProcessor(cornerRadius: 20)
+        let processor = ResizingImageProcessor(referenceSize: CGSize(width: 350, height: 350)) |> RoundCornerImageProcessor(cornerRadius: 20)
         catImageView.kf.indicatorType = .activity
         catImageView.kf.setImage(
             with: url,
@@ -132,7 +132,7 @@ class LikesViewController: UIViewController {
 
 //MARK: - ViewModel Delegate
 
-extension LikesViewController: LikesViewModelDelegate {
+extension VotingViewController: VotingViewModelDelegate {
     func updateView() {
         DispatchQueue.main.async {
             self.configureView()

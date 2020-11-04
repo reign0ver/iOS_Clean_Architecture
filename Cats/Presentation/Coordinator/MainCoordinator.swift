@@ -29,13 +29,6 @@ class MainCoordinator: NSObject, Coordinator {
         childCoordinators.append(breedDetailsCoordinator)
         breedDetailsCoordinator.start()
     }
-    
-    func showLikesWindow() {
-        let likesCoordinator = LikesCoordinator(navController: navigationController)
-        childCoordinators.append(likesCoordinator)
-        likesCoordinator.start()
-    }
-    
 }
 
 extension MainCoordinator: UINavigationControllerDelegate {
