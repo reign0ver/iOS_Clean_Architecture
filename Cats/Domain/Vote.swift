@@ -8,8 +8,8 @@
 import Foundation
 
 struct Vote {
-    var name: String = ""
-    var date: Date? = Date()
-    var imageURL: String = ""
-    var vote: String = ""
+    var name: String
+    var date: Date?
+    var imageURL: String
+    var kind: TypeOfVote
 }

@@ -18,7 +18,29 @@ class FavoritesViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getAllVotes()
+        setupNavigationBar()
+    }
+    
+    private func getAllVotes() {
         viewModel.getAllVotes()
+        tableView.reloadData()
+    }
+    
+    private func setupNavigationBar() {
+        self.navigationItem.title = viewModel.navigationTitle
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .always
+    }
+    
+    private func setupTableView() {
+        tableView.register(FavoritesCell.self, forCellReuseIdentifier: FavoritesCell.reuseIdentifier)
+        tableView.allowsSelection = false
     }
     
     required init?(coder: NSCoder) {
@@ -31,7 +53,7 @@ class FavoritesViewController: UITableViewController {
 extension FavoritesViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -39,6 +61,10 @@ extension FavoritesViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: FavoritesCell.reuseIdentifier) as! FavoritesCell
+        let currentVote = viewModel.votes[indexPath.row]
+        cell.configure(vote: currentVote)
+        
+        return cell
     }
 }

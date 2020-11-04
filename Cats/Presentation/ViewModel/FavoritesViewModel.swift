@@ -10,6 +10,7 @@ import Foundation
 class FavoritesViewModel {
     
     var votes: [Vote] = []
+    var navigationTitle = "Favorites"
     private let getAllVotesUseCase: GetVotesFromLocalDataSourceUseCase
     
     init(_ getAllVotesUseCase: GetVotesFromLocalDataSourceUseCase) {

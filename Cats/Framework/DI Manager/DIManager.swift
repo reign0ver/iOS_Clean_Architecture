@@ -68,6 +68,9 @@ final class DIManager {
         container.register(SaveVoteLocalUseCase.self) { r in
             SaveVoteLocalUseCase(r.resolve(CatImagesRepository.self)!)
         }
+        container.register(GetVotesFromLocalDataSourceUseCase.self) { r in
+            GetVotesFromLocalDataSourceUseCase(r.resolve(CatImagesRepository.self)!)
+        }
         
         //ViewModels
         container.register(BreedsViewModel.self) { r in
@@ -78,6 +81,9 @@ final class DIManager {
         }
         container.register(VotingViewModel.self) { r in
             VotingViewModel(r.resolve(GetRandomCatImageUseCase.self)!, r.resolve(SaveVoteLocalUseCase.self)!)
+        }
+        container.register(FavoritesViewModel.self) { r in
+            FavoritesViewModel(r.resolve(GetVotesFromLocalDataSourceUseCase.self)!)
         }
         
         //Views

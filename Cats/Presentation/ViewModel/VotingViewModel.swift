@@ -42,7 +42,7 @@ class VotingViewModel {
     
     func saveVote(_ action: TypeOfVote) {
         guard let image = image else { return }
-        let vote = Vote(name: image.id, imageURL: image.url, vote: action.rawValue)
+        let vote = Vote(name: image.id, imageURL: image.url, kind: action)
         let result = saveLocalVoteUseCase.execute(vote)
         //TODO
         if result {

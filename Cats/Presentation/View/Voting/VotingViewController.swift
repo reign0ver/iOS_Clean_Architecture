@@ -86,17 +86,8 @@ class VotingViewController: UIViewController {
     }
     
     private func configureView() {
-        let url = URL(string: viewModel.image!.url)
-        let scale = UIScreen.main.scale
-        let processor = ResizingImageProcessor(referenceSize: CGSize(width: 350, height: 350)) |> RoundCornerImageProcessor(cornerRadius: 20)
-        catImageView.kf.indicatorType = .activity
-        catImageView.kf.setImage(
-            with: url,
-            options: [
-                .processor(processor),
-                .scaleFactor(scale),
-                .transition(.fade(1)),
-        ])
+        let url = viewModel.image!.url
+        catImageView.setImageFromURL(url, estimatedWidth: 350, estimatedHeight: 350, cornerRadius: 20)
     }
     
     //MARK: - Views

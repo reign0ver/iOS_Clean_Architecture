@@ -59,6 +59,8 @@
 		FB90055E25524C2F00C6E361 /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90055D25524C2F00C6E361 /* FavoritesCell.swift */; };
 		FB9005662552683C00C6E361 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9005652552683C00C6E361 /* FavoritesViewModel.swift */; };
 		FB90056B2552687600C6E361 /* GetVotesFromLocalDataSourceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90056A2552687600C6E361 /* GetVotesFromLocalDataSourceUseCase.swift */; };
+		FBA4C5BC2552741C004B98EE /* FavoritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4C5BB2552741C004B98EE /* FavoritesCoordinator.swift */; };
+		FBA4C5C125527F19004B98EE /* UIImageView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4C5C025527F19004B98EE /* UIImageView + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +145,8 @@
 		FB90055D25524C2F00C6E361 /* FavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
 		FB9005652552683C00C6E361 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		FB90056A2552687600C6E361 /* GetVotesFromLocalDataSourceUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVotesFromLocalDataSourceUseCase.swift; sourceTree = "<group>"; };
+		FBA4C5BB2552741C004B98EE /* FavoritesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinator.swift; sourceTree = "<group>"; };
+		FBA4C5C025527F19004B98EE /* UIImageView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +207,7 @@
 				FB133B872549AA0300173596 /* MainCoordinator.swift */,
 				FB133B8C2549B88400173596 /* VotingCoordinator.swift */,
 				FB133B912549F30700173596 /* BreedDetailsCoordinator.swift */,
+				FBA4C5BB2552741C004B98EE /* FavoritesCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				FB37683325487FEC004D58EB /* UIViewController + Extensions.swift */,
+				FBA4C5C025527F19004B98EE /* UIImageView + Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -467,10 +473,10 @@
 		FBE5646425422B3F00425F11 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FBF1DC9A2552485B008E294C /* Favorites */,
 				FB37682425487D90004D58EB /* ListOfBreeds */,
 				FB37684C254885C4004D58EB /* BreedDetails */,
 				FB37684D254885D3004D58EB /* Voting */,
+				FBF1DC9A2552485B008E294C /* Favorites */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -766,6 +772,7 @@
 				FB3CDF8A2540756200645A16 /* ListOfBreedsViewController.swift in Sources */,
 				FB37684F254885E2004D58EB /* VotingViewModel.swift in Sources */,
 				FB37683A254880D3004D58EB /* CustomTabBarController.swift in Sources */,
+				FBA4C5C125527F19004B98EE /* UIImageView + Extensions.swift in Sources */,
 				FB37682925487DD1004D58EB /* BreedsCell.swift in Sources */,
 				FB376870254887D2004D58EB /* GetBreedImageUseCase.swift in Sources */,
 				FB37685B25488651004D58EB /* BreedDetailsViewController.swift in Sources */,
@@ -780,6 +787,7 @@
 				FB574016254759E20019D892 /* BreedsRepository.swift in Sources */,
 				FB57403C2547A9B10019D892 /* CatImagesRemoteDataSource.swift in Sources */,
 				FB9005662552683C00C6E361 /* FavoritesViewModel.swift in Sources */,
+				FBA4C5BC2552741C004B98EE /* FavoritesCoordinator.swift in Sources */,
 				FB133B922549F30700173596 /* BreedDetailsCoordinator.swift in Sources */,
 				FB37682E25487E13004D58EB /* BreedsViewModel.swift in Sources */,
 				FB3CDF882540756200645A16 /* SceneDelegate.swift in Sources */,

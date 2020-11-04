@@ -21,12 +21,13 @@ class VoteEntity: Object {
     @objc
     dynamic var vote: String = ""
     
-    init(
+    convenience init(
         name: String? = "",
         date: Date? = Date(),
         imageURL: String? = "",
         vote: String? = ""
     ) {
+        self.init()
         self.name = name!
         self.date = date!
         self.imageURL = imageURL!

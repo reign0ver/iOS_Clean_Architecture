@@ -28,11 +28,3 @@ extension UIViewController {
         containerLoading = nil
     }
 }
-
-//MARK: Add cornerRadius for whatever View
-extension UIView {
-    func setRadius(radius: CGFloat? = nil) {
-        self.layer.cornerRadius = radius ?? self.frame.width / 5
-        self.layer.masksToBounds = true
-    }
-}

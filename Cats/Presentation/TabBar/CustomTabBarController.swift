@@ -12,12 +12,13 @@ class CustomTabBarController: UITabBarController {
     
     private let mainCoordinator = MainCoordinator(navController: UINavigationController())
     private let votingCoordinator = VotingCoordinator(navController: UINavigationController())
+    private let favoritesCoordinator = FavoritesCoordinator(navController: UINavigationController())
     
     private var controllers: [UIViewController] {
         return [
             mainCoordinator.navigationController,
             votingCoordinator.navigationController,
-            UIViewController()
+            favoritesCoordinator.navigationController
         ]
     }
     
@@ -41,15 +42,16 @@ class CustomTabBarController: UITabBarController {
         super.viewDidLoad()
         startCoordinators()
         viewControllers = controllers
-        setTabBarTitles()
+        setTabBarIcons()
     }
     
     private func startCoordinators() {
         mainCoordinator.start()
         votingCoordinator.start()
+        favoritesCoordinator.start()
     }
     
-    private func setTabBarTitles() {
+    private func setTabBarIcons() {
         for index in 0...controllers.count - 1 {
             controllers[index].tabBarItem.image = controllerIcons[index].withRenderingMode(.alwaysOriginal)
             controllers[index].tabBarItem.selectedImage = controllerIconsPressed[index].withRenderingMode(.alwaysOriginal)

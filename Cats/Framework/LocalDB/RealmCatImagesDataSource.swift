@@ -34,7 +34,7 @@ class RealmCatImagesDataSource: CatImagesLocalDataSource {
                 name: voteEntity.name,
                 date: voteEntity.date,
                 imageURL: voteEntity.imageURL,
-                vote: voteEntity.vote
+                kind: TypeOfVote(rawValue: voteEntity.vote) ?? .like
             )
         }
     }
@@ -43,7 +43,7 @@ class RealmCatImagesDataSource: CatImagesLocalDataSource {
         return VoteEntity(
             name: vote.name,
             imageURL: vote.imageURL,
-            vote: vote.vote
+            vote: vote.kind.rawValue
         )
     }
     
