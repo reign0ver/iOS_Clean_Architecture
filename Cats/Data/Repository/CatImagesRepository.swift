@@ -32,5 +32,4 @@ class CatImagesRepository {
     func getAllVotes() -> [Vote] {
         return localDataSource.getAllVotes()
     }
-    
 }

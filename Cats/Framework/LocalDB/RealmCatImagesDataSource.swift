@@ -12,7 +12,6 @@ class RealmCatImagesDataSource: CatImagesLocalDataSource {
     
     private let persistanceInstance = BaseLocalDataSource<VoteEntity>()
     
-    //TODO: Error handling, return a bool or throw the error til presentation layer(?)
     func save(vote: Vote) -> Bool {
         do {
             try persistanceInstance.insert(mapToVoteEntity(vote))

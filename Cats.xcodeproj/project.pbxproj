@@ -19,7 +19,6 @@
 		FB37682925487DD1004D58EB /* BreedsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37682725487DD1004D58EB /* BreedsCell.swift */; };
 		FB37682E25487E13004D58EB /* BreedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37682D25487E13004D58EB /* BreedsViewModel.swift */; };
 		FB37683425487FEC004D58EB /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37683325487FEC004D58EB /* UIViewController + Extensions.swift */; };
-		FB37683A254880D3004D58EB /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB376839254880D3004D58EB /* CustomTabBarController.swift */; };
 		FB37684025488571004D58EB /* DIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37683F25488571004D58EB /* DIManager.swift */; };
 		FB37684F254885E2004D58EB /* VotingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37684E254885E2004D58EB /* VotingViewModel.swift */; };
 		FB37685425488610004D58EB /* VotingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37685325488610004D58EB /* VotingViewController.swift */; };
@@ -57,6 +56,9 @@
 		FB5740BC2547EA330019D892 /* CatImagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5740BB2547EA330019D892 /* CatImagesService.swift */; };
 		FB789E1E2552FD0000F9FED5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB789E1D2552FD0000F9FED5 /* AppCoordinator.swift */; };
 		FB789E232552FD0D00F9FED5 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB789E222552FD0D00F9FED5 /* TabBarCoordinator.swift */; };
+		FB8B394C255340A10024BB3D /* CatImagesMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B394B255340A10024BB3D /* CatImagesMockService.swift */; };
+		FB8B3954255340BC0024BB3D /* BreedsMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B3953255340BC0024BB3D /* BreedsMockService.swift */; };
+		FB8B3960255342150024BB3D /* CatImagesLocalMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B395F255342150024BB3D /* CatImagesLocalMock.swift */; };
 		FB90055825524B7E00C6E361 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90055725524B7E00C6E361 /* FavoritesViewController.swift */; };
 		FB90055E25524C2F00C6E361 /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90055D25524C2F00C6E361 /* FavoritesCell.swift */; };
 		FB9005662552683C00C6E361 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9005652552683C00C6E361 /* FavoritesViewModel.swift */; };
@@ -101,7 +103,6 @@
 		FB37682725487DD1004D58EB /* BreedsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedsCell.swift; sourceTree = "<group>"; };
 		FB37682D25487E13004D58EB /* BreedsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedsViewModel.swift; sourceTree = "<group>"; };
 		FB37683325487FEC004D58EB /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
-		FB376839254880D3004D58EB /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		FB37683F25488571004D58EB /* DIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIManager.swift; sourceTree = "<group>"; };
 		FB37684E254885E2004D58EB /* VotingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VotingViewModel.swift; sourceTree = "<group>"; };
 		FB37685325488610004D58EB /* VotingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VotingViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +146,9 @@
 		FB5740BB2547EA330019D892 /* CatImagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImagesService.swift; sourceTree = "<group>"; };
 		FB789E1D2552FD0000F9FED5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FB789E222552FD0D00F9FED5 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		FB8B394B255340A10024BB3D /* CatImagesMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImagesMockService.swift; sourceTree = "<group>"; };
+		FB8B3953255340BC0024BB3D /* BreedsMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsMockService.swift; sourceTree = "<group>"; };
+		FB8B395F255342150024BB3D /* CatImagesLocalMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImagesLocalMock.swift; sourceTree = "<group>"; };
 		FB90055725524B7E00C6E361 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		FB90055D25524C2F00C6E361 /* FavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
 		FB9005652552683C00C6E361 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
@@ -245,14 +249,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		FB376838254880C1004D58EB /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				FB376839254880D3004D58EB /* CustomTabBarController.swift */,
-			);
-			path = TabBar;
-			sourceTree = "<group>";
-		};
 		FB37683E2548851F004D58EB /* DI Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,6 +344,7 @@
 		FB57401F2547A6C50019D892 /* APIService */ = {
 			isa = PBXGroup;
 			children = (
+				FB8B394A25533FB70024BB3D /* Mock */,
 				FB5740332547A8D90019D892 /* BreedsRemoteDataSource.swift */,
 				FB57403B2547A9B10019D892 /* CatImagesRemoteDataSource.swift */,
 			);
@@ -409,6 +406,23 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		FB8B394A25533FB70024BB3D /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				FB8B394B255340A10024BB3D /* CatImagesMockService.swift */,
+				FB8B3953255340BC0024BB3D /* BreedsMockService.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		FB8B395E255341A70024BB3D /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				FB8B395F255342150024BB3D /* CatImagesLocalMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		FB90055C25524C1000C6E361 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -433,7 +447,6 @@
 				FB133B7D2549A86600173596 /* Coordinator */,
 				FBE5646425422B3F00425F11 /* View */,
 				FBE5646325422B3800425F11 /* ViewModel */,
-				FB376838254880C1004D58EB /* TabBar */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -449,6 +462,7 @@
 		FBE5645F25422ADB00425F11 /* LocalDB */ = {
 			isa = PBXGroup;
 			children = (
+				FB8B395E255341A70024BB3D /* Mock */,
 				FB5740402547AA1E0019D892 /* CatImagesLocalDataSource.swift */,
 			);
 			path = LocalDB;
@@ -764,6 +778,7 @@
 				FB37684025488571004D58EB /* DIManager.swift in Sources */,
 				FB133B8D2549B88400173596 /* VotingCoordinator.swift in Sources */,
 				FB37686325488730004D58EB /* ImageBreedStaticCell.swift in Sources */,
+				FB8B3960255342150024BB3D /* CatImagesLocalMock.swift in Sources */,
 				FB133B802549A87900173596 /* Coordinator.swift in Sources */,
 				FB57409C2547E8110019D892 /* BaseRemoteDataSource.swift in Sources */,
 				FB5740412547AA1E0019D892 /* CatImagesLocalDataSource.swift in Sources */,
@@ -777,7 +792,6 @@
 				FB90055825524B7E00C6E361 /* FavoritesViewController.swift in Sources */,
 				FB3CDF8A2540756200645A16 /* ListOfBreedsViewController.swift in Sources */,
 				FB37684F254885E2004D58EB /* VotingViewModel.swift in Sources */,
-				FB37683A254880D3004D58EB /* CustomTabBarController.swift in Sources */,
 				FBA4C5C125527F19004B98EE /* UIImageView + Extensions.swift in Sources */,
 				FB37682925487DD1004D58EB /* BreedsCell.swift in Sources */,
 				FB376870254887D2004D58EB /* GetBreedImageUseCase.swift in Sources */,
@@ -791,6 +805,7 @@
 				FB5740342547A8D90019D892 /* BreedsRemoteDataSource.swift in Sources */,
 				FB37681D25486A8B004D58EB /* GetListOfBreedsUseCase.swift in Sources */,
 				FB37685425488610004D58EB /* VotingViewController.swift in Sources */,
+				FB8B394C255340A10024BB3D /* CatImagesMockService.swift in Sources */,
 				FB574016254759E20019D892 /* BreedsRepository.swift in Sources */,
 				FB57403C2547A9B10019D892 /* CatImagesRemoteDataSource.swift in Sources */,
 				FB789E1E2552FD0000F9FED5 /* AppCoordinator.swift in Sources */,
@@ -802,6 +817,7 @@
 				FB57405A2547D13B0019D892 /* NetworkError.swift in Sources */,
 				FB5740BC2547EA330019D892 /* CatImagesService.swift in Sources */,
 				FB5740642547DE5F0019D892 /* TypeOfVote.swift in Sources */,
+				FB8B3954255340BC0024BB3D /* BreedsMockService.swift in Sources */,
 				FB37686225488730004D58EB /* BreedInformationCell.swift in Sources */,
 				FB57401B25475A060019D892 /* CatImagesRepository.swift in Sources */,
 				FB5740522547ADA60019D892 /* VoteEntity.swift in Sources */,
